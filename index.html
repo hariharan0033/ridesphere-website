@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Showcasing RideSphere - A student-focused ride-sharing mobile app. Explore screenshots and features.">
+  <title>RideSphere | App Showcase</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>RideSphere </h1>
+      <p>A ride-sharing platform for students to conveniently pool transport (bike/car) between home and college. Post rides, search rides, and commute smarter!</p>
+    </div>
+  </header>
+
+  
+
+  <section class="gallery container">
+    <h2>📸 App Screenshots</h2>
+
+    <!-- Replace src with your actual image paths -->
+    <div class="screenshot" onclick="openModal(this)">
+      <img src="images/screenshot1.jpg" alt="Screenshot 1"/>
+    </div>
+    <div class="screenshot" onclick="openModal(this)">
+      <img src="images/screenshot2.jpg" alt="Screenshot 2"/>
+    </div>
+    <div class="screenshot" onclick="openModal(this)">
+      <img src="images/screenshot3.jpg" alt="Screenshot 3"/>
+    </div>
+    <div class="screenshot" onclick="openModal(this)">
+      <img src="images/screenshot4.jpg" alt="Screenshot 4"/>
+    </div>
+    <div class="screenshot" onclick="openModal(this)">
+      <img src="images/screenshot5.jpg" alt="Screenshot 5"/>
+    </div>
+    <div class="screenshot" onclick="openModal(this)">
+      <img src="images/screenshot6.jpg" alt="Screenshot 6"/>
+    </div>
+    <div class="screenshot" onclick="openModal(this)">
+      <img src="images/screenshot7.jpg" alt="Screenshot 7"/>
+    </div>
+    <div class="screenshot" onclick="openModal(this)">
+      <img src="images/screenshot8.jpg" alt="Screenshot 8"/>
+    </div>
+    <div class="screenshot" onclick="openModal(this)">
+      <img src="images/screenshot9.jpg" alt="Screenshot 9"/>
+    </div>
+    <div class="screenshot" onclick="openModal(this)">
+      <img src="images/screenshot10.jpg" alt="Screenshot 10"/>
+    </div>
+    <div class="screenshot" onclick="openModal(this)">
+      <img src="images/screenshot11.jpg" alt="Screenshot 11"/>
+    </div>
+    <div class="screenshot" onclick="openModal(this)">
+      <img src="images/screenshot12.jpg" alt="Screenshot 12"/>
+    </div>
+    <div class="screenshot" onclick="openModal(this)">
+      <img src="images/screenshot13.jpg" alt="Screenshot 13"/>
+    </div>
+    <div class="screenshot" onclick="openModal(this)">
+      <img src="images/screenshot14.jpg" alt="Screenshot 14"/>
+    </div>
+    <div class="screenshot" onclick="openModal(this)">
+      <img src="images/screenshot15.jpg" alt="Screenshot 15"/>
+    </div>
+    <div class="screenshot" onclick="openModal(this)">
+      <img src="images/screenshot16.jpg" alt="Screenshot 16"/>
+    </div>
+    <div class="screenshot" onclick="openModal(this)">
+      <img src="images/screenshot17.jpg" alt="Screenshot 17"/>
+    </div>
+    <div class="screenshot" onclick="openModal(this)">
+      <img src="images/screenshot18.jpg" alt="Screenshot 18"/>
+    </div>
+    <div class="screenshot" onclick="openModal(this)">
+      <img src="images/screenshot19.jpg" alt="Screenshot 19"/>
+    </div>
+    
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox" onclick="closeModal()">
+    <img id="lightbox-img" src="" alt="Expanded Screenshot"/>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 Hariharan E | 
+        <a href="https://www.linkedin.com/in/hariharan0033/" target="_blank">LinkedIn</a> | 
+        <a href="https://github.com/hariharan0033/ridesphere" target="_blank">GitHub</a>
+    </p>
+  </footer>
+
+  <script>
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeModal();
+    });
+
+    function openModal(el) {
+        const modal = document.getElementById('lightbox');
+        const img = document.getElementById('lightbox-img');
+        img.src = el.querySelector('img').src;
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden'; // disable scroll
+    }
+
+    function closeModal() {
+        document.getElementById('lightbox').style.display = 'none';
+        document.body.style.overflow = 'auto'; // re-enable scroll
+    }
+
+  </script>
+</body>
+</html>
